@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Welcome to Tech-introspectors' website" />
+    <title>Pest Detection</title>
+
+
+    <!--    /// Link for CSS ///  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Days One' rel='stylesheet'>
+
+</head>
+
+<body>
+    <!-- /// Navbar ///-->
+    <header id="home">
+        <nav class="topnav" id="topNavBar">
+            <div class="nav">
+                <div class="logo">
+                    <a href="#">Pest Detection</a>
+                </div>
+
+                <div class="menu-center">
+                    <a href="#home" class="menu">Home</a>
+                    <a href="#Description" class="menu">Description</a>
+                    <a href="#layout-section" class="menu">Why Us?</a>
+                    <a href="#team-section" class="menu">Team</a>
+                    <a href="#footer-section" class="right">Contact Us</a>
+                </div>
+            </div>
+
+
+        </nav>
+        <!--            //// mobile-view menu  /////-->
+        <div class="navbarcontent">
+            <span style="font-size:30px;cursor:pointer" class="menuBar" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#home">Home</a>
+                    <a href="#Description">Description</a>
+                    <a href="#Why-Us">Why Us?</a>
+                    <a href="#team-section">Team</a>
+                    <a href="#footer-section">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="banner-content">
+            <h1>Welcome To <span class="bright">pest detection</span></h1>
+            <p> We are on our way to revolutionize agriculture in India. </p>
+            <div class="arrow bounce">
+                <a class="fa fa-arrow-down fa-2x" href="#intro"></a>
+            </div>
+        </div>
+    </header>
+
+
+    <!--    //// About us -section ////-->
+    <section id="intro"></section>
+    <div class="intro-content">
+
+        <h2>We are <span class="bright">TechnoCrats</span></h2>
+        <p>While conducting a survey looking for the problems in agriculture which can be solved through technology, we came across a number of problems and decided to take off on each problem.</p>
+
+        <p>In the past, we identified the problem of adverse weather in agriculture so we came up with a chatbot which is capable of updating the farmer with live forecast and which can alert farmers a week before any upcoming storm. We even included language
+            translation in the chatbot which provides the farmers with all the information they need in the tip of their fingers.</p>
+        <div class="btn">
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5606636/" target="_blank" class="btn-know-more">Know more</a>
+                    </div>
+    </div>
+    </section>
+
+    <!--About us section till here------------>
+
+
+    <!---Description section-->
+
+    <section id="Description"></section>
+    <div class="Description-content">
+
+        <h2>Our <span class="bright">solution</span></h2>
+        <p>Now coming to real world problems in agriculture, there are a number of problems faced by a farmer right from turning the soil preparing it for seeding till harvesting stage of a crop. We can't group all these problems together since there are
+            a variety of solutions. One such problem we're addressing now is the ruthless destruction of crops due to agricultural pests. There are many different kinds of destructive pests, from termites that eat your home’s structure to bed bugs that
+            bite you while you sleep. Some of the worst, however, are pests that feed on plants. Agricultural pests can not only ruin gardens, but they can also ruin entire crops meant to feed hundreds of people.A study by Cambridge shows that every year,
+            farmers combat a variety of pests to make sure their fruits, vegetables, and grains grow successfully. Among crops, the total global potential loss due to pests varied from about 50% in wheat to more than 80% in cotton production. The responses
+            are estimated as losses of 26–29% for soybean, wheat and cotton, and 31, 37 and 40% for maize, rice and potatoes, respectively. Overall, weeds produced the highest potential loss (34%), with animal pests and pathogens being less important
+            (losses of 18 and 16%).</p>
+    </div>
+    </section>
+
+    <!--Description sec-->
+
+    <!--    /// Why us-section ///-->
+
+    <section id="layout-section">
+        <div class="layout-content">
+            <div class="row">
+                <div class="col">
+                    <h2>Are there any <span class="bright">Existing </span>solutions</h2>
+                    <p>For instance, a regular image processing and machine learning algorithm can be used to classify healthy plants from infected plants like these:</p>
+                </div>
+            </div>
+            <div class="main-layout">
+                <div class="column">
+                    <img id="myImg1" src="images/healthy1.jpg" alt="This is a healthy leaf">
+                    <h2>Healthy leaf</h2>
+                </div>
+                <div class="column">
+                    <img id="myImg2" src="images/infected1.jpg" alt="This is an infected leaf">
+                    <h2>Infected leaf</h2>
+                </div>
+            </div>
+            <div class="col">
+                <p>But not every pest leaves spots on the plant leaves. There are many pest underground as well as inside the crop which can NOT be detected by such methods. Hence we came up with a better solution.</p>
+            </div>
+
+            <!--   // Model //-->
+            <div id="myModal" class="modal">
+
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="myimg01">
+
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+            </div>
+            <div id="myModal1" class="modal model1">
+
+                <!-- The Close Button -->
+                <span class="close1">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+
+                <img class="modal-content1" id="img02">
+
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption1"></div>
+            </div>
+            <div id="myModal2" class="modal model2">
+
+                <!-- The Close Button -->
+                <span class="close2">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+
+                <img class="modal-content2" id="img03">
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption2"></div>
+            </div>
+        </div>
+    </section>
+    <!--------------------------Existing solution-->
+    <section id="solution">
+    <div class="solution-content">
+
+        <h2>Our <span class="bright">solution</span></h2>
+        <div class="solution-info">
+            <p>That's where our solution comes into play. As we already gave you a brief glimpse, let us go deep into the solution. A thermal sensor is used to capture the heat radiated by an object or a body. We are using thermal sensors to capture thermal
+                images of plants. A thermal sensor shows the distribution of heat across a body. Blue stands for no to little heat and red stands for maximum heat intensity.
+                <br>Now, a healthy plant does not generate enough heat so it will be blue in colour. Like the plant in the top right. But if the plant is affected by insects or parasites, the heat generated by the insects can be easily captured using
+                a sensitive thermal sensor.
+                <br><br>For instance, the bottom image is a thermal image of an infected plant. The difference can be noticed clearly.
+
+                <br><br> In this way, the farmer can easily know the condition of the plant and can take necessary actions before things go out of the hand. If traditional image processing techniques were used, the pest inside wouldn't be visible but
+                a thermal sensor can capture the heat emitted by the hidded pests. </p>
+            <img src="images/collage.jpeg" alt="Image">
+        </div>
+    </div>
+    </section>
+    <!----Our solution-------->
+
+
+    <!--        //// Team Section ////-->
+    <section class="team-section" id="team-section">
+        <div class="team-content">
+            <div class="row">
+                <div class="col">
+                    <h2>Our <span class="bright">Awesome</span> Team</h2>
+                    <p>Meet the people behind this project.</p>
+                </div>
+            </div>
+            <div class="team-details">
+                <div class="teamMember1">
+                    <img src="images/akash.jpeg" alt="" class="img1">
+                    <h3>AKASH KUMAR NAYAK</h3>
+                    <p class="team-role">Developer</p>
+                    <p class="team-desc">A tech enthusiast and an AI, ML geek. Passionate about Datascience and currently on the journey to become a full stack developer. </p>
+                </div>
+                <div class="teamMember1">
+                    <img src="images/binod.jpeg" alt="" class="img2">
+
+                    <h3>BINOD KUMAR NAYAK</h3>
+                    <p class="team-role">Developer</p>
+                    <p class="team-desc">A front end wizard. Curious in learning in new technologies. App development is my game. Self learner with a passion over learning.</p>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!--        //// footer-section ////    -->
+    <section id="footer-section">
+        <div class="footer-content">
+            <div class="sec-1">
+                <h2>Pest Detection</h2>
+                <p>TechnoCrats is a team of 2 techno enthusiast coming together to solve various problems through the means of technology.</p>
+            </div>
+            <div class="sec-2">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <hr>
+                    <li><a href="#">Description</a></li>
+                    <hr>
+                    <li><a href="#">Why Us?</a></li>
+                    <hr>
+                    <li><a href="#team-section">Team</a></li>
+                    <hr>
+
+                </ul>
+            </div>
+            <div class="sec-3">
+                <h3>Contact Us</h3>
+                <p>
+                    Show us your support by reaching us at our social media accounts. Any suggestions are accepted. <br><br>
+                    <i class="fa fa-map-marker"> </i><span class="location"> Hyderabad, Telangana - India</span> <br><br>
+                    <i class="fa fa-phone"> </i> <span class="phNo"> +91 91789456123 , +91 789456123</span>
+                    <br><br>
+                    <i class="fa fa-envelope"></i><span class="mail"> technocrats@gmail.com</span>
+                </p>
+            </div>
+        </div>
+        <div class="footer-copyRight">
+            <h4>&copy; 2023 All Rights Reserved. Created by <b style="color : #03fc0b;">TechnoCrats</b>
+            </h4>
+        </div>
+    </section>
+
+
+
+
+    <!--    /// link for  JQuary ///-->
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <!--/// link for javascript ///-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
